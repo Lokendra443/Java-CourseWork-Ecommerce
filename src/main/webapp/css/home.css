@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    background-color: #EDEDED;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.middle-image {
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.middle-image img {
+    width: 900px; 
+    max-height: 80vh; 
+}
+
+.big-heading {
+    font-family: "Arial", sans-serif; 
+    font-size: 3em;
+    text-align: center;
+    margin-top: 365px; 
+    margin-left: 50px;
+}
+
+.another-heading {
+    font-family: "Arial", sans-serif; 
+    text-align: center; 
+    margin-top: 10px; 
+    margin-left: 50px;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.search-bar {
+    position: absolute;
+    top: 6vh; 
+    left: 78vw; 
+    transform: translate(-50%, -50%); 
+    display: flex; 
+    align-items: center; 
+}
+
+.search-bar input[type="text"] {
+    width: 40vw; 
+    max-width: 300px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px 0 0 15px; 
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #675CDB; 
+    border: none;
+    border-radius: 0 15px 15px 0; 
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+    margin-right: 5px; 
+}
+
+.banner-image {
+    position: absolute;
+    top: 28px; 
+    right: 5vw; 
+    cursor: pointer;
+    width: 38px;
+    height: 40px; 
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: #675CDB; 
+}
+
+.button-container {
+    text-align: center; 
+    margin-top: 10px; 
+    margin-left: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.shop-button {
+    padding: 15px 30px; 
+    background-color: #675CDB; 
+    color: white; 
+    border: none; 
+    border-radius: 100px; 
+    font-size: 1.5em; 
+    cursor: pointer; 
+}
+
+.clickable-image {
+    
+    width: 60px; 
+    height: 60px; 
+    position: relative;
+    top: -5px;
+    left: 330px;
+}
+
+#products {
+    position: relative; 
+    width: 100%; 
+    text-align: left; 
+    padding: 20px; 
+}
+
+
+.products-text {
+    font-size: 2em; 
+    font: weight 400px; 
+    margin-left: 35px; 
+    font-family: "Arial", sans-serif; 
+}
+
+
+/* Styling for the image within the products section */
+.products-image {
+    width: 60px; 
+    height: 60px; 
+    position: absolute; 
+    top: 50%;
+    right: 35px; 
+    margin-right: 70px; 
+    transform: translateY(-50%); 
+}
+
+
+
+/* Styling for the product card */
+.product-card {
+    background-color: #EDEDED; 
+    min-width: 200px;
+    width: 300px; 
+    padding: 20px; 
+    border-radius: 10px; 
+    align-items: center; 
+    justify-content: space-between; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px 60px; 
+	cursor: pointer;
+}
+
+
+
+/* Styling for the product image within the product card */
+.product-image img {
+    width: 300px;
+    height: 250px; 
+}
+
+/* Styling for the details section within the product card */
+.product-details {
+    text-align: center; 
+}
+
+/* Styling for the product name within the product card */
+.product-name {
+    position: relative; 
+    top: 17px; 
+    font-size: 1.2em; 
+    margin-bottom: 10px; 
+}
+
+/* Styling for the product price within the product card */
+.product-price {
+    position: relative; 
+    color: #675CDB; 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    top: 15px; 
+}
+
+/* Styling for the 'add to cart' section within the product card */
+.add-to-cart {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 20px;
+}
+
+
+/* Styling for the 'add to cart' button within the product card */
+.add-to-cart-button {
+    width: 100%; 
+    background-color: #675CDB; 
+    color: white; 
+    padding: 10px 0; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Styling for the 'add to cart' button on hover state */
+.add-to-cart-button:hover {
+    background-color: #4B4380; 
+}
+/* Styling for the container holding the product cards */
+.product-container {
+    display: flex; 
+    flex-wrap:wrap;
+    justify-content: center; 
+    margin: 30px; 
+    
+}
+
+
+.list{
+    padding: 0;
+}
+
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: 7px;
+    position: relative;
+}
+
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #D0DB5C;
+    transition-duration: .5s;
+}
+
+.list li:hover::before{
+    width: 70px;
+
+}
+
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+.bottom-bar{
+    background-color: #D0DB5C;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+.logo-main{
+    width: 60px;
+    height: 50px;
+    position: relative;
+    left: 40px;
+}
+
+.popup {
+            visibility: hidden;
+            position: absolute;
+            top: -120%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+           	background-color:white;
+            width: 300px;
+            height: 300px;
+            padding: 2% 20px 11% 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: visibility 0.3s ease;
+            
+        }
+ 
+
+        .popup.show {
+            visibility: visible;
+        }
+
+        .popup h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width:90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup>button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #675CDB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup>button:hover {
+    background-color: #0056b3;
+}

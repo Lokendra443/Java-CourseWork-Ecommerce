@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15+Charted&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.f-raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.__cart-header {
+  text-align: center;
+  margin: 1.25rem 0;
+}
+.__cart-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5rem 0.5rem;
+}
+.__cart-item:nth-child(even) {
+  background-color: #e0e6fa;
+}
+.__cart-footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1.75rem;
+  margin: 1rem;
+}
+.__cart-total {
+  font-size: 22px;
+  font-weight: 600;
+}
+.__cart-footer button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 2rem;
+  border: none;
+}
+.__cart-footer button:hover {
+  background-color: white;
+  color: black;
+  outline: 3px dotted black;
+  cursor: pointer;
+}
+img {
+	width: 100px;
+	height: 100px;
+}
+.__cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.__cart-table th, .__cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.__cart-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.__cart-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+th{
+	font-size:40px;
+	margin: 10px 20px;
+}

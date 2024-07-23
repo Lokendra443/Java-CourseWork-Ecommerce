@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* footer styles  */
+footer {
+  padding: 3rem 2rem;
+  background: #6190e8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.__footer-section {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.__footer-header {
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.__footer-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.__footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.__footer-contact div {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.__footer-contact div > img {
+  width: 15px;
+  height: 15px;
+}
+.__footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.__footer-newsletter div > input {
+  padding: 5px;
+  width: 200px;
+  border-radius: 0px;
+}
+.__footer-newsletter div > button {
+  width: 85px;
+  background-color: black;
+  color: #f5f4f2;
+  border-radius: 0px;
+}
+.__footer-newsletter-input {
+  display: flex;
+}

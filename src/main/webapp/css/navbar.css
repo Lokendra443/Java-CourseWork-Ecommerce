@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+nav{
+    display: flex;
+    width: 100%;
+    background : #675CDB;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+
+.logo-main{
+    width: 60px;
+    height: 50px;
+    position: relative;
+    left: 40px;
+}
+
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+
+nav ol li{
+    margin: 0 2px;
+}
+
+nav ol li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
+
+nav ol li:hover a{
+    background: #fff;
+    color: #0a5071;
+}
+
+nav .search_box {
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+nav .search_box input {
+    border: none;
+    outline: none;
+    background: #fff;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 350px;
+}
+
+nav .search_box span {
+    color: #0a5071;
+    font-size: 20px;
+    background: #fff;
+    height: 35px; 
+    width: 35px; 
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav .search_box span:hover {
+    color: #fff;
+}
+
+nav .search_box span::after {
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #ff003c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+nav .search_box span:hover::after {
+    width: 100%;
+}
